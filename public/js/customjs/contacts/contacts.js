@@ -34,7 +34,6 @@ var Contacts = function() {
                     orderable: true,
                     searchable: true,
                     'render': function(data, type, row) {
-                        console.log('Phone:', data);
                         if (type === 'display' && data) {
                             return data.replace(/\n/g, '<br>');
                         }
@@ -403,8 +402,6 @@ var Contacts = function() {
             // Prepare data
             var primaryId = $('#primaryContactId').val();
             var secondaryId = $('#secondaryContact').val();
-            console.log(primaryId);
-            console.log(secondaryId);
             mergePayload = {
                 master_id: primaryId,
                 secondary_id: secondaryId,

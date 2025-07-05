@@ -51,13 +51,13 @@
     <div class="row">
         <!-- Total Contacts Card -->
         <div class="col-xl-6 col-md-6">
-            <a href="javascript:;" class="text-decoration-none">
+            <a href="{{ route('contacts.index') }}" class="text-decoration-none">
             <div class="card dashboard-card border-0 shadow-sm h-100">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h6 class="card-title text-muted mb-2">Total Contacts</h6>
-                            <div class="card-value text-primary">452</div>
+                            <div class="card-value text-primary">{{ $totalContactsCount }}</div>
                         </div>
                         <div class="card-icon text-primary">
                             <i class="fas fa-users"></i>

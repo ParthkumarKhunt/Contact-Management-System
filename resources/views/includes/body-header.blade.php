@@ -15,7 +15,11 @@
                         <i class="fas fa-tachometer-alt me-1"></i> Dashboard
                     </a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('contacts.*') ? 'active' : '' }}" href="{{ route('contacts.index') }}">
+                        <i class="fas fa-users me-1"></i> Contacts
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('custom-fields.*') ? 'active' : '' }}" href="{{ route('custom-fields.index') }}">
                         <i class="fas fa-cogs me-1"></i> Custom Fields

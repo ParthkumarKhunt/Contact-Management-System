@@ -19,7 +19,8 @@
         var baseUrl = "{{ url('/') }}";
         var checkUniqueLabelUrl = "{{ route('custom-fields.check-unique-label') }}";
         var checkUniqueLabelForEditUrl = "{{ route('custom-fields.check-unique-label-edit') }}";
-
+        var checkUniqueEmailUrl = "{{ route('contacts.check-unique-email') }}";
+        var checkUniqueEmailForEditUrl = "{{ route('contacts.check-unique-email-edit') }}";
     </script>
     @yield('css-content')
 </head>
